@@ -317,6 +317,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.glance_approach=false \
     ro.hardware.sensors=sanders
 
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ro.surface_flinger.protected_contents=true
+
 #Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
