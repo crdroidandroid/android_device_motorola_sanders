@@ -1,4 +1,5 @@
-# Copyright (C) 2018 The LineageOS Project
+#
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
+PRODUCT_MAKEFILES := \
+	$(LOCAL_DIR)/lineage_sanders.mk
 
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := libqsap_shim.c
-LOCAL_SHARED_LIBRARIES := libqsap_sdk liblog libcutils libutils
-LOCAL_C_INCLUDES := $(TOP)/system/qcom/softap/sdk
-LOCAL_MODULE := libqsap_shim
-LOCAL_MODULE_TAGS := optional
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_SHARED_LIBRARY)
+COMMON_LUNCH_CHOICES := \
+	lineage_sanders-userdebug
