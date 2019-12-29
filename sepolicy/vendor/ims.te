@@ -3,3 +3,4 @@ get_prop(ims, debug_prop);
 set_prop(ims, debug_prop)
 allow ims self:capability net_raw;
 allow ims diag_device:chr_file { read write };
+allow ims sysfs:file read;

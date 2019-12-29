@@ -9,3 +9,5 @@ allow thermal-engine sysfs_vadc_dev:lnk_file { read open };
 
 allow thermal-engine self:capability { dac_override dac_read_search };
 allow thermal-engine sysfs_vadc_dev:dir search;
+allow thermal-engine sysfs:file { read write getattr };
+allow thermal-engine sysfs:dir read;
