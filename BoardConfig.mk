@@ -256,3 +256,6 @@ WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 BUILD_BROKEN_DUP_RULES := true
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2019-8-5
