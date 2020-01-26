@@ -317,16 +317,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.glance_approach=false \
     ro.hardware.sensors=sanders
 
-# SurfaceFlinger
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.protected_contents=true
-
+# Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.enable_gl_backpressure=1 \
-debug.sf.early_phase_offset_ns=500000 \
-debug.sf.early_app_phase_offset_ns=500000 \
-debug.sf.early_gl_phase_offset_ns=3000000 \
-debug.sf.early_gl_app_phase_offset_ns=15000000
+    ro.surface_flinger.protected_contents=true \
+    ro.surface_flinger.use_smart_90_for_video=true \
+    ro.surface_flinger.set_display_power_timer_ms=10000 \
+    ro.surface_flinger.set_touch_timer_ms=5000 \
+    ro.surface_flinger.set_idle_timer_ms=9000
 
 #Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
