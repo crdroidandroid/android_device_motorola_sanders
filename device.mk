@@ -214,7 +214,7 @@ PRODUCT_PACKAGES += \
     telephony-ext
 
 #PRODUCT_BOOT_JARS += \
-#    telephony-ext
+    telephony-ext
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -447,8 +447,8 @@ PRODUCT_PACKAGES += \
     android.hidl.manager-V1.0-java
 
 # Wi-Fi Display
-#PRODUCT_BOOT_JARS += \
-#    WfdCommon
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # CarrierConfig
 PRODUCT_PACKAGES += \
