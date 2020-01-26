@@ -13,8 +13,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
     <application
         android:allowBackup="true"
         android:label="@string/moto_actions_title"
@@ -47,16 +45,6 @@
         </service>
 
         <activity
-            android:name=".DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/LineageActions">
-            <intent-filter>
-                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name=".ActionsPreferenceActivity"
             android:label="@string/moto_actions_title"
             android:summary="@string/device_gestures_summary"
@@ -69,7 +57,7 @@
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
+                android:resource="@drawable/ic_settings_gestures_dashboard" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/device_gestures_summary" />
