@@ -315,10 +315,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.qmi.adb_logmask=0 \
     telephony.lteOnCdmaDevice=1
 
-# SurfaceFlinger
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.protected_contents=true
-
 # Early phase offset configuration for SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
