@@ -235,6 +235,7 @@ PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
+    telephony-ext \
     ims-ext-common_system
 
 # IMS
@@ -476,6 +477,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
+
+# Wi-Fi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 PRODUCT_BOARD_PLATFORM := msm8996
 
