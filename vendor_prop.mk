@@ -11,6 +11,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.video=false \
     av.offload.enable=false \
     av.debug.disable.pers.cache=1 \
+    debug.stagefright.ccodec=0 \
     qcom.hw.aac.encoder=false \
     persist.audio.dirac.speaker=true \
     persist.dirac.acs.controller=qem \
