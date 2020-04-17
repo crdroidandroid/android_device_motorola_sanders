@@ -2,6 +2,9 @@
 #allow untrusted_app_25 proc:file read;
 #allow untrusted_app_25 qti_debugfs:file read;
 
+get_prop(untrusted_app_25, camera_prop);
+get_prop(untrusted_app_25, persist_camera_prop);
+
 allow untrusted_app_25 init:unix_stream_socket { read write };
 
 allow untrusted_app_25 self:udp_socket ioctl;
