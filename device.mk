@@ -232,6 +232,9 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # IMS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager
@@ -445,6 +448,10 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     tcpdump \
     libwpa_client
+
+# Wi-Fi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Wifi Symlinks
 PRODUCT_PACKAGES += \
