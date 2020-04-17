@@ -485,6 +485,9 @@ PRODUCT_PACKAGES += \
     product_charger_res_images
 
 PRODUCT_ENFORCE_RRO_TARGETS :=*
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/lineage-sdk \
+    $(LOCAL_PATH)/overlay/packages/apps/Snap
 
 PRODUCT_BOARD_PLATFORM := msm8996
 
