@@ -268,12 +268,6 @@ on property:ro.boot.dualsim=false
 on property:ro.boot.hwrev=*
    start vendor.mmi-boot-sh
 
-service adspd /vendor/bin/adspd
-   class main
-   socket adspdsock stream 0660 system audio
-   user audio
-   group audio input diag
-
 service vendor.mmi-boot-sh /vendor/bin/sh /vendor/bin/init.mmi.boot.sh
     class core
     user root
