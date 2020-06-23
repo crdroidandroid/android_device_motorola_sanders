@@ -161,9 +161,11 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.configstore@1.0-service \
+    hdmi_cec.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libgenlock \
+    libgpu_tonemapper \
     libtinyxml \
     libdisplayconfig \
     libdisplayconfig.vendor \
