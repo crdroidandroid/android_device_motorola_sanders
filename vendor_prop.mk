@@ -117,6 +117,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
+    debug.sf.disable_backpressure=1 \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
     persist.camera.preview.ubwc=0 \
@@ -320,6 +321,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.protected_contents=true
 
