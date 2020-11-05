@@ -40,12 +40,16 @@
     <allow-in-power-save package="com.qualcomm.simcontacts" />
     <allow-in-power-save package="com.qualcomm.qti.autoregistration" />
     <allow-in-power-save package="com.qualcomm.qti.server.wigigapp" />
-    <allow-in-power-save package="com.qualcomm.qti.StatsPollManager" />
     <allow-in-power-save package="com.qualcomm.qti.gsma.services.nfc" />
     <allow-in-power-save package="com.quicinc.voice.activation" />
     <allow-in-power-save package="com.android.mms" />
     <allow-in-power-save package="com.qualcomm.qti.callenhancement" />
     <allow-in-power-save package="com.qualcomm.qti.smartassistant" />
+    <allow-in-power-save package="com.android.email" />
+    <!-- These are location components that need to freely run in the background -->
+    <allow-in-power-save package="com.qualcomm.location" />
+    <allow-in-power-save package="com.qualcomm.location.XT" />
+    <allow-implicit-broadcast action="org.codeaurora.intent.action.CALL_COMPOSER_INFO" />
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteclient" />
@@ -81,7 +85,6 @@
     <hidden-api-whitelisted-app package="com.qualcomm.qti.uimlpatest" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.lpa" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.uim" />
-
     <hidden-api-whitelisted-app package="org.codeaurora.snapcam" />
     <hidden-api-whitelisted-app package="com.android.mms" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.carrierswitch" />
