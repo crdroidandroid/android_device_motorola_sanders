@@ -1,0 +1,34 @@
+[
+   {
+      "repository":"vendor_motorola_sanders",
+      "target_path":"vendor/motorola/sanders"
+   },
+   {
+      "repository":"kernel_motorola_msm8953",
+      "target_path":"kernel/motorola/msm8953"
+   },
+   {
+      "remote":"github",
+      "repository":"LineageOS/android_packages_apps_FMRadio",
+      "target_path":"packages/apps/FMRadio",
+      "branch":"lineage-18.0"
+   },
+   {
+      "remote":"github",
+      "repository":"LineageOS/android_system_qcom",
+      "target_path":"system/qcom",
+      "branch":"lineage-18.0"
+   },
+   {
+      "remote":"github",
+      "repository":"LineageOS/android_system_tools_dtbtool",
+      "target_path":"system/tools/dtbtool",
+      "branch":"lineage-18.0"
+   },
+   {
+      "remote":"github",
+      "repository":"LineageOS/android_packages_resources_devicesettings",
+      "target_path":"packages/resources/devicesettings",
+      "branch":"lineage-18.0"
+  }
+]
